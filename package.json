@@ -1,6 +1,6 @@
 {
   "name": "fetch-manifest-json",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Fetch manifest.json",
   "license": "MIT",
   "repository": "hemanth/fetch-manifest-json",
