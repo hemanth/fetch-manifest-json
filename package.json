@@ -1,6 +1,6 @@
 {
   "name": "fetch-manifest-json",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fetch mainfest.json from a PWA.",
   "license": "MIT",
   "repository": "hemanth/fetch-manifest-json",
