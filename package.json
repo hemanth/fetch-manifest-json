@@ -1,0 +1,39 @@
+{
+  "name": "fetch-manifest-json",
+  "version": "0.0.0",
+  "description": "Fetch manifest.json",
+  "license": "MIT",
+  "repository": "hemanth/fetch-manifest-json",
+  "author": {
+    "name": "Hemanth.HM",
+    "email": "hemanth.hm@gmail.com",
+    "url": "h3manth.com"
+  },
+  "bin": "cli.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "ava"
+  },
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "cli-app",
+    "cli",
+    "pwa",
+    "manifest",
+    "manifest-json"
+  ],
+  "dependencies": {
+    "got": "^6.3.0",
+    "meow": "^3.7.0",
+    "x-ray": "^2.3.0"
+  },
+  "devDependencies": {
+    "ava": "^0.14.0",
+    "debug": "^2.2.0"
+  }
+}
