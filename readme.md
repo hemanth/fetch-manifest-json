@@ -1,6 +1,6 @@
 # fetch-manifest-json [![Build Status](https://travis-ci.org/hemanth/fetch-manifest-json.svg?branch=master)](https://travis-ci.org/hemanth/fetch-manifest-json)
 
-> My shining module
+> Fetch mainfest.json from a PWA.
 
 
 ## Install

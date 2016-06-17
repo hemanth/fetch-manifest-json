@@ -1,7 +1,7 @@
 {
   "name": "fetch-manifest-json",
   "version": "1.0.0",
-  "description": "Fetch manifest.json",
+  "description": "Fetch mainfest.json from a PWA.",
   "license": "MIT",
   "repository": "hemanth/fetch-manifest-json",
   "author": {
