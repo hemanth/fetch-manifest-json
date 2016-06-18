@@ -3,8 +3,8 @@ const got = require('got');
 const debug = require('debug')('manifest');
 const xray = require('x-ray')();
 
-module.exports = function (appUrl) {
-  return new Promise(function (resolve, reject) {
+module.exports = appUrl => {
+  return new Promise((resolve, reject) => {
         xray(appUrl, 'link[rel=manifest]@href')(function (err, manifestTarget) {
             debug(err, manifestTarget);
 
@@ -16,7 +16,7 @@ module.exports = function (appUrl) {
                 manifestTarget: manifestTarget
             });
         });
-    }).then((result) => {
+    }).then(result => {
         if (result.manifestTarget) {
           // found manifest via html
             return got(result.manifestTarget);

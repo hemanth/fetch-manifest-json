@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 'use strict';
-var meow = require('meow');
-var fetchManifestJson = require('./');
-var cli = meow([
+const meow = require('meow');
+const fetchManifestJson = require('./');
+const cli = meow([
 	'Usage',
 	'  $ fetch-manifest-json [URL]',
 	'Example',
@@ -15,4 +15,4 @@ if(cli.input.length === 0) {
 	process.exit(0);
 }
 
-fetchManifestJson(cli.input[0]).then(p => console.log(p)).catch(err => console.log(err))
+fetchManifestJson(cli.input[0]).then(p => console.log(p))
