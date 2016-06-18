@@ -7,7 +7,6 @@ var cli = meow([
 	'Usage',
 	'  $ fetch-manifest-json [URL]',
 	'',
-	'  $ fetch-manifest-json https://jsfeautes.in'
+	'  $ fetch-manifest-json https://jsfeatures.in'
 ]);
-
-fetchManifestJson(cli.input[0]).then(p => console.log(p));
+fetchManifestJson(cli.input[0]).then(p => console.log(p))
