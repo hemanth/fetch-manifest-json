@@ -16,15 +16,15 @@ module.exports = function (appUrl) {
                 manifestTarget: manifestTarget
             });
         });
-    }).then(function (result) {
+    }).then((result) => {
         if (result.manifestTarget) {
           // found manifest via html
             return got(result.manifestTarget);
-        } 
+        }
         // no manifest in html, fetch at root
         return got(appUrl + '/manifest.json');
-        
-    }).then(function (result) {
+
+    }).then(result => {
         var manifestResponse = result.body;
         var manifestJson = null;
         try {
@@ -35,7 +35,7 @@ module.exports = function (appUrl) {
 
         return manifestJson;
     })
-    .catch(function (err) {
+    .catch(err => {
         throw err;
     });
 };
