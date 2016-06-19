@@ -5,7 +5,7 @@
 
 ## Install
 
-```
+``` sh
 $ npm install --save fetch-manifest-json
 ```
 
@@ -20,38 +20,38 @@ fetchManifestJson(<URL>).then(console.log).catch(console.error);
 
 ## CLI
 
-```
+``` sh
 $ npm install --global fetch-manifest-json
 ```
 
-```
+``` sh
 $ fetch-manifest-json --help
 
-  Usage
-    fetch-manifest-json [URL]
+	Usage
+		fetch-manifest-json [URL]
 
-  Examples
-    $ fetch-manifest-json https://jsfeatures.in
+	Example
+		$ fetch-manifest-json https://jsfeatures.in
 
-    { name: 'JSfeatures.in',
-      short_name: 'JSfeatures',
-      icons: 
-       [ { src: 'images/touch/icon-128x128.png',
-           sizes: '128x128',
-           type: 'image/png' },
-         { src: 'images/touch/apple-touch-icon.png',
-           sizes: '152x152',
-           type: 'image/png' },
-         { src: 'images/touch/ms-touch-icon-144x144-precomposed.png',
-           sizes: '144x144',
-           type: 'image/png' },
-         { src: 'images/touch/chrome-touch-icon-192x192.png',
-           sizes: '192x192',
-           type: 'image/png' } ],
-      start_url: '/',
-      display: 'standalone',
-      background_color: '#3E4EB8',
-      theme_color: '#00BCD4' } 
+		{ name: 'JSfeatures.in',
+			short_name: 'JSfeatures',
+			icons:
+			 [ { src: 'images/touch/icon-128x128.png',
+					 sizes: '128x128',
+					 type: 'image/png' },
+				 { src: 'images/touch/apple-touch-icon.png',
+					 sizes: '152x152',
+					 type: 'image/png' },
+				 { src: 'images/touch/ms-touch-icon-144x144-precomposed.png',
+					 sizes: '144x144',
+					 type: 'image/png' },
+				 { src: 'images/touch/chrome-touch-icon-192x192.png',
+					 sizes: '192x192',
+					 type: 'image/png' } ],
+			start_url: '/',
+			display: 'standalone',
+			background_color: '#3E4EB8',
+			theme_color: '#00BCD4' }
 ```
 
 P.S: This module is extracted from [PWAify](https://github.com/vladikoff/PWAify)
