@@ -16,7 +16,7 @@ if(cli.input.length === 0) {
 	process.exit(0);
 }
 
-isOnline(function(err, online) {
+isOnline((err, online) => {
 	if(!online) {
 		console.log('Please check your internet connectivity.');
 		process.exit(1);
