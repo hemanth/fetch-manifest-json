@@ -2,6 +2,7 @@
 'use strict';
 const meow = require('meow');
 const fetchManifestJson = require('./');
+const isOnline = require('is-online');
 const cli = meow([
 	'Usage',
 	'  $ fetch-manifest-json [URL]',
@@ -15,11 +16,11 @@ if(cli.input.length === 0) {
 	process.exit(0);
 }
 
-dns.lookup('www.google.com', err => {
-  if (err && err.code === 'ENOTFOUND') {
-    console.log('Please check you internet connection.');
-    process.exit(1);
-  }
+isOnline(function(err, online) {
+	if(!online) {
+		console.log('Please check your internet connectivity.');
+		process.exit(1);
+	}
 });
 
 fetchManifestJson(cli.input[0]).then(p => console.log(p))
