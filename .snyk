@@ -8,3 +8,6 @@ patch:
         patched: '2017-05-26T00:33:05.402Z'
     - x-ray > x-ray-crawler > ms:
         patched: '2017-05-26T00:33:05.402Z'
+  'npm:debug:20170905':
+    - x-ray > debug:
+        patched: '2017-10-06T00:33:09.791Z'
