@@ -30,7 +30,7 @@
     "manifest-json"
   ],
   "dependencies": {
-    "got": "^6.3.0",
+    "got": "^11.8.5",
     "is-online": "^5.1.1",
     "meow": "^3.7.0",
     "x-ray": "^2.3.0",
