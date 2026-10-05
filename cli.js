@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 'use strict';
-const meow = require('meow');
+const meow = ((m) => (m && m.default) ? m.default : m)(require('meow'));
 const fetchManifestJson = require('./');
-const isOnline = require('is-online');
+const isOnline = ((m) => (m && m.default) ? m.default : m)(require('is-online'));
 const cli = meow([
 	'Usage',
 	'  $ fetch-manifest-json [URL]',

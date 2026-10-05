@@ -1,5 +1,5 @@
 'use strict';
-const got = require('got');
+const got = ((m) => (m && m.default) ? m.default : m)(require('got'));
 const debug = require('debug')('manifest');
 const xray = require('x-ray')();
 

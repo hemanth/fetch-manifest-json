@@ -1,5 +1,5 @@
 import test from 'ava';
-import fn from './';
+import fn from './index.js';
 
 test('title', t => {
 	fn('https://jsfeatures.in').then(res => t.is(typeof res, 'object'))
